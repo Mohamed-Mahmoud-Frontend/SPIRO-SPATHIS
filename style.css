@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.vid-head {
+    /* set width to 100% */
+    width: 100%;
+
+    /* set position to relative */
+    position: relative;
+}
+.head-nav {
+    position: absolute;
+    /* background-color: rgba(235, 235, 235, 0.068); */
+    height: 100vh;
+    width: 300px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+img.avatar {
+    margin-left: 2%;
+    margin-top: .7rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* animation: anim; */
+    animation: anim 3s delay;
+}
+img.avatar:hover{
+rotate: 360deg;
+}
+
+
+@keyframes anim {
+    0% {
+        rotate: 0;
+    }
+
+    20% {
+        rotate: 50deg;
+    }
+
+    40% {
+        rotate: 80deg;
+    }
+
+    60% {
+        rotate: 100deg;
+    }
+
+    80% {
+        rotate: 120deg;
+    }
+
+    100% {
+        rotate: 180deg;
+    }
+}
+
+ul {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 3rem;
+}
+
+i.fa-solid {
+    font-size: 1.7rem;
+
+}
+
+i {
+    cursor: pointer;
+
+
+}
+
+.active {
+    /* color: rgb(44, 4, 4); */
+    text-decoration: solid;
+}
+
+i:nth-child(1) {
+    font-size: 1.7rem;
+    color: rgb(247, 18, 18);
+}
+
+i:nth-child(2) {
+    font-size: 1.7rem;
+    color: wheat;
+}
+
+i:nth-child(3) {
+    font-size: 2rem;
+    color: rgb(38, 38, 170);
+}
+
+i:nth-child(4) {
+    font-size: 2rem;
+    color: brown;
+}
+
+i:nth-child(5) {
+    font-size: 2rem;
+    color: rgb(79, 79, 238);
+}
